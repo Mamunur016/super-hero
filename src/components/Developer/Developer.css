@@ -1,13 +1,21 @@
+/* single developer cart design */
+
 .developer{
-    /* display: flex; */
-    border-bottom: 1px solid lightgray;
-    border: 1px solid lightslategray;
-    box-shadow: 1px solid cyan;
+ 
+    box-shadow: 4px 4px 7px dimgray;
+    padding: 10px 5px;
+    
     border-radius: 10px;
-    padding: 5px;
     text-align: center;
-    padding-bottom: 15px;
+  
 }
+.developer:hover {
+    
+    box-shadow: 4px 4px 7px darkslategrey;
+    border-radius: 10px;
+    border: 1px solid blueviolet;
+    
+  }
 .developer img {
     height: 150px;
     width: 150px;
@@ -17,16 +25,21 @@
     color: blue;
     font-weight: 400;
 }
+
+/* button */
 .btn-regular{
     background-color: goldenrod;
-    width: 150px;
-    height: 25px;
+    width: 170px;
+    height: 30px;
     border: 1px solid gray;
     border-radius: 5px;
     cursor: pointer;
 }
+
+/* fontawesome icon */
 .icon-color{
     color: gold;
+    font-size: 16px;
 }
 .icon a {
     margin-right: 20px;

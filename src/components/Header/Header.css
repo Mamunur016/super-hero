@@ -1,15 +1,19 @@
+/* header area */
 .header {
     text-align: center;
     background-color: rgba(0, 0, 0, 0.8);
+    /* background-color: rgba(119, 136, 153, 0.938); */
     padding-bottom: 10px;
     color: white;
+    font-weight: 400px;
+    letter-spacing: .02em;
 }
 .header nav {
-    background-color:rgba(0, 0, 0, 0.8);
+    background-color:rgba(0, 0, 0, 0.1);
     line-height: 40px;
     
 }
-
+/* header nav link style */
 .header a{
     text-decoration: none;
 	

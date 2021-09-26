@@ -1,0 +1,27 @@
+/* cart section */
+.cart {
+    width: 300px;
+    padding: 10px;
+    box-shadow: 10px 10px 20px gray;
+    border-radius: 5px;
+    /* min-height: 300px; */
+   
+  }
+  /* cart button */
+  .cart .btn {
+    text-align: center;
+  }
+  .cart button {
+    padding: 10px 30px;
+    background-color: blueviolet;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    letter-spacing: .05em;
+  }
+  .cart button:hover{
+    background-color:rgb(50, 92, 90);
+    transition: .5s;
+    border: 1px solid rgb(50, 92, 90);;
+  }

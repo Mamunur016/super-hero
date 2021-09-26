@@ -4,9 +4,13 @@ import Developer from '../Developer/Developer';
 import './Developers.css'
 
 const Developers = () => {
+
+    // different useState hook
     const [developers, setDevelopers] = useState([]);
     const [cart, setCart] = useState([]);
+    const [displaycart, setDisplayCart] = useState([]);
 
+    // fetch data from api
     useEffect(() => {
         fetch('./developers.JSON')
             .then(res => res.json())
@@ -15,10 +19,24 @@ const Developers = () => {
 
             });
     }, []);
+
+
+    //  set unique value of array of object
+    useEffect(() => {
+
+        const key = 'key';
+
+        const arrayUniqueByKey = [...new Map(cart.map(item => [item[key], item])).values()];
+        setDisplayCart(arrayUniqueByKey);
+    }, [cart])
+
+
+    // event handler
     const handleAddToCart = (developer) => {
-        // console.log(developer.name);
         const newCart = [...cart, developer];
         setCart(newCart);
+
+
 
     }
     return (
@@ -33,7 +51,7 @@ const Developers = () => {
                 }
             </div>
             <div className="cart-container">
-                <Cart cart={cart}></Cart>
+                <Cart cart={displaycart}></Cart>
 
             </div>
         </div>

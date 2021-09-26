@@ -14,7 +14,7 @@ const Header = () => {
             </nav>
             <h2>Make an Developement Team.</h2>
             <h4>Find quality freelancers and agencies for web and mobile development</h4>
-            <h4>Total Budget: 10M</h4>
+            <h4>Total Budget: 10 Millions</h4>
 
 
         </div>
