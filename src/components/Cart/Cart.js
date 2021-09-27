@@ -25,7 +25,7 @@ const Cart = (props) => {
             <div className="name">
                 <h4>Developer Name:</h4>
                 {
-                    cart.map(cart => <Name name={cart.name}
+                    cart.map(cart => <Name name={cart}
                         key={cart.key}
 
                     ></Name>)
@@ -45,8 +45,13 @@ const Cart = (props) => {
 const Name = (props) => {
 
     return (
-        <div>
-            <p>{props.name}</p>
+        <div className="name">
+            <div className="m">
+                <img src={props.name.img} alt="" />
+                <p> {props.name.name}</p>
+                <p>$ {props.name.salary}</p>
+            </div>
+
         </div>
     )
 }
